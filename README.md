@@ -6,7 +6,7 @@ Departments:
   - dept_name
 Titles:
   - title_id
-  - title
+  - title 
 Employees:
   - emp_no
   - emp_title_id

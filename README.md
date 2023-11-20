@@ -1,28 +1,29 @@
 # sql-challenge
 ## SQL Module 9 Challenge
 This code creates 6 tables to import data from the fictional company Pewlett Hackard. The tables are as follows: departments, titles, employees, department managers, employee departments, and salaries. The tables are each created with the following columns:
-Departments:
+### Departments:
   - dept_no
   - dept_name
-Titles:
+### Titles:
   - title_id
   - title 
-Employees:
+### Employees:
   - emp_no
   - emp_title_id
   - birth_date
   - first_name
   - last_name
   - sex
-Department Managers:
+### Department Managers:
   - dept_no
   - emp_no
-Employee Department:
+### Employee Department:
   - emp_no
   - dept_no
-Salaries:
+### Salaries:
   - emp_no
   - salary
+    
 Each table is created with a primary key, with the employees, department managers, employee departments and salaries tables also containing foreign keys as they contain columns overlapping with previously created tables.  The data for these tables are contained in csv files, respectively titled "departments.csv", "titles.csv", "employees.csv", "dept_managers.csv", "dept_emp.csv", and "salaries.csv". After the tables and columns are created, the data is then imported through the import/export data method, which is not seen in the script. The csv files are imported to their respective tables, and then certain data is pulled from each table:
 First a dataset is created listing the employee number, last name, first name, sex, and salary for each employee. This data is taken from the employees and salaries table, so this is done through joining the two tables.
 The next dataset lists the first name, last name, and hire date for the employees who were hired in 1986. This data is taken entirely from the employees table, and the year is extracted from the hire date to see which employees were hired in 1986.
